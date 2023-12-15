@@ -50,4 +50,14 @@ fn main() {
     // 能用:? 就可以用:#?
     println!("{:#?}", peter);
 }
-
+/*输出的内容如下
+12 months in a year.
+"Christian" "Slater" is the "actor's" name.
+Christian Slater is the actor's name.
+Now Structure(3) will print!
+Now Deep(Structure(7)) will print!
+Person {
+    name: "Peter",
+    age: 27,
+}
+*/

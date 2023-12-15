@@ -39,7 +39,7 @@ public class Program
     public record Deep(Structure value);
 
     public struct Person{
-        public string name;
+        public string name;//Rust有主动生命周期的管理，C# 是基于gc的，这里写法有不同
         public byte   age;
         public override string ToString(){
             var sb = new StringBuilder();
@@ -115,3 +115,15 @@ public class Program
         Console.WriteLine("{0}", peter);
     }
 }
+/*
+This is C# Language
+12 months in a year.
+"Christian" "Slater" is the "actor's" name.
+Christian Slater is the actor's name.
+Now Structure(3) will print!
+Now Deep(Structure(7)) will print!
+Person {
+    name:"Peter",
+    age:27,
+}
+*/

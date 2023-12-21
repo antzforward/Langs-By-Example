@@ -1,3 +1,4 @@
+use std::time::{Duration, Instant};
 //这个应该在C#中用的delegate的方式，对比一下，C#的delegate支持闭包吗？试试。
 
 // 定义一个函数，可以接受一个由 `Fn` 限定的泛型 `F` 参数并调用它。
@@ -28,5 +29,8 @@ fn main() {
     
     call_me(closure);
     call_me(function);
-    fib_root(fib, 5);
+    let start = Instant::now();
+    fib_root(fib, 45);
+    let duration = start.elapsed();
+    println!("Elapsed nanoseconds: {}", duration.as_nanos());
 }

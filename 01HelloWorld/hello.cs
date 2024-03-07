@@ -3,7 +3,7 @@ public class Program
 {
     public static void Main(string[] args)
     {
-		Console.WriteLine("This is C# Language");
-        Console.WriteLine("Hello, World!");
+		Console.WriteLine("这是c#语言");
+        Console.WriteLine("世界你好!");
     }
 }

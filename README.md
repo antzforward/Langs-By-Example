@@ -2,7 +2,7 @@
 
 ## 不同语言的命令行编译的设置
 1、 CPP 每次打开cmd 输入 "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build\vcvarsall.bat" x64
-然后使用cl filename.cpp
+然后使用cl /EHsc /std:c++17 filename.cpp
 可以有将输入的部分编写为bat，启动之后再执行吧
 
 2、C# 正常安装好.NET Framework 最新版本，将路径添加在Path，然后使用csc filename.cs

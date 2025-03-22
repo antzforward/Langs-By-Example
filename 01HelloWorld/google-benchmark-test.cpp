@@ -1,3 +1,5 @@
+//编译指令要变成下面，其他的设置我都设置好了，比如％ＩＮＣＬＵＤＥ％和％ＬＩＢ％路径。
+//cl /EHsc /std:c++17 %1.cpp /link benchmark.lib shlwapi.lib
 #include <benchmark/benchmark.h>
 
 // The function to be benchmarked

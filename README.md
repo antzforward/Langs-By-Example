@@ -4,9 +4,12 @@
 1、 CPP 每次打开cmd 输入 "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build\vcvarsall.bat" x64
 然后使用cl /EHsc /std:c++17 filename.cpp
 可以有将输入的部分编写为bat，启动之后再执行吧
+如果是benchmark形式的，就要加上引用的库 比如 
+"cl /EHsc /std:c++17 xxxx.cpp /link benchmark.lib shlwapi.lib"
 
 2、C# 正常安装好.NET Framework 最新版本，将路径添加在Path，然后使用csc filename.cs
 3、Rustc 正常安装好Cargo，将rustc的目录添加到path，然后使用rustc [--test] filename.rs
+4、go的编译比较简单，直接go build xxx.go 或者
 
 ## 学习Rust的过程
 ## 学习过程

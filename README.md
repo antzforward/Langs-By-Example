@@ -7,7 +7,7 @@
 如果是benchmark形式的，就要加上引用的库 比如 
 "cl /EHsc /std:c++17 xxxx.cpp /link benchmark.lib shlwapi.lib"
 
-2、C# 正常安装好.NET Framework 最新版本，将路径添加在Path，然后使用csc filename.cs
+2、C# 正常安装好.NET Framework 最新版本，将路径添加在Path，然后使用csc filename.cs,环境坏掉了，我转向用linqpad，这个更好一点，后缀对应linq文件
 3、Rustc 正常安装好Cargo，将rustc的目录添加到path，然后使用rustc [--test] filename.rs
 4、go的编译比较简单，直接go build xxx.go 或者
 

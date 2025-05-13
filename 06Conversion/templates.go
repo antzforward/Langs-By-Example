@@ -23,7 +23,7 @@ func main() {
 		"C++",
 		"C#",
 	})
-
+	//lambda 形式
 	Create := func(name, t string) *template.Template {
 		return template.Must(template.New(name).Parse(t))
 	}

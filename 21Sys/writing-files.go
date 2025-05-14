@@ -4,6 +4,7 @@ import (
 	"bufio"
 	"fmt"
 	"os"
+	"path/filepath"
 )
 
 func check(e error) {
@@ -13,12 +14,17 @@ func check(e error) {
 }
 
 func main() {
-
-	d1 := []byte("hello\ngo\n")
-	err := os.WriteFile("/tmp/dat1", d1, 0644)
+	dir, err := os.Getwd()
 	check(err)
 
-	f, err := os.Create("/tmp/dat2")
+	path := filepath.Join(dir, "/tmp/dat1")
+	os.MkdirAll(filepath.Dir(path), 0755)
+	d1 := []byte("hello\ngo\n")
+	err = os.WriteFile(path, d1, 0644)
+	check(err)
+	path = filepath.Join(dir, "/tmp/dat2")
+	os.MkdirAll(filepath.Dir(path), 0755)
+	f, err := os.Create(path)
 	check(err)
 
 	defer f.Close()

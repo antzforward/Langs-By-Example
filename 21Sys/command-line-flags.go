@@ -70,4 +70,14 @@ Usage of F:\Learn\Rust-By-Example\21Sys\command-line-flags.exe:
         a string var (default "bar")
   -word string
         a string (default "foo")
+./command-line-flags.exe -h
+Usage of F:\Learn\Rust-By-Example\21Sys\command-line-flags.exe:
+  -fork
+        a bool
+  -numb int
+        an int (default 42)
+  -svar string
+        a string var (default "bar")
+  -word string
+        a string (default "foo")
 */

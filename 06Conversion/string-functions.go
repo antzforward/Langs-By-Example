@@ -7,6 +7,9 @@ import (
 
 var p = fmt.Println
 
+// string的API 从这里查找https://pkg.go.dev/strings，除了多了个rune，其他都还好
+// 天然支持多国语言，这个要重点学习，切换语言也要处理多国语言
+// 注意string下面有两个，我认为要补充用例的Builder，Replacer
 func main() {
 
 	p("Contains:  ", s.Contains("test", "es"))

@@ -4,3 +4,4 @@
 *.rlib
 *.obj
 */tmp/*
+*.csv

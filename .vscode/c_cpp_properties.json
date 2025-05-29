@@ -3,7 +3,8 @@
         {
             "name": "Win32",
             "includePath": [
-                "${workspaceFolder}/**"
+                "${workspaceFolder}/**",
+                "${INCLUDE}"
             ],
             "defines": [
                 "_DEBUG",
@@ -16,7 +17,7 @@
             "cppStandard": "c++17",
             "intelliSenseMode": "windows-msvc-x64",
             "compilerArgs": [
-                "/EHsc ",
+                "/EHsc",
                 "/std:c++17 ",
                 "/link benchmark.lib shlwapi.lib"
             ]

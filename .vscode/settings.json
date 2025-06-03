@@ -24,7 +24,7 @@
         "cpp": "cd $dir && $workspaceRoot\\start_vs_cmd.bat $fileName",//"cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
         "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
         "php": "php",
-        "python": "python -u",
+        "python": "cd $dir && $workspaceRoot\\start_conda_py.bat  $fileName",
         "perl": "perl",
         "perl6": "perl6",
         "ruby": "ruby",
